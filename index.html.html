@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roblox Script Academy</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#020812;color:#fff;line-height:1.6}
+nav{position:sticky;top:0;z-index:5;padding:16px 7%;display:flex;justify-content:space-between;align-items:center;background:rgba(2,8,18,.96);border-bottom:1px solid #12304d}
+.logo{font-size:21px;font-weight:800}.logo span{color:#19a9ff}
+nav a{color:#dce9f5;text-decoration:none;margin:0 9px;font-size:14px}
+.btn{display:inline-block;background:#159ff2;color:white;text-decoration:none;font-weight:bold;padding:13px 22px;border-radius:12px;box-shadow:0 0 25px #159ff244;transition:.2s}
+.btn:hover{transform:translateY(-3px)}
+.hero{min-height:560px;padding:80px 7%;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;background:radial-gradient(circle at 75% 35%,#087fd733,transparent 35%),linear-gradient(135deg,#020812,#07182a)}
+.badge{display:inline-block;padding:7px 13px;border:1px solid #155887;border-radius:30px;color:#9edbff;background:#06182a;font-size:13px;margin-bottom:18px}
+h1{font-size:clamp(40px,5vw,64px);line-height:1.05;margin-bottom:20px}h1 span,.blue{color:#159ff2}
+.hero p{font-size:18px;color:#afc1d2;max-width:600px;margin-bottom:28px}
+.visual{height:360px;border:1px solid #155887;border-radius:24px;background:linear-gradient(145deg,#09213a,#020812);box-shadow:0 0 60px #008cff22;display:flex;align-items:center;justify-content:center;font-size:100px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #12304d;border-bottom:1px solid #12304d}
+.feature{padding:28px;background:#03101e;border-right:1px solid #12304d}.feature b{display:block;font-size:17px}.feature p{color:#91a8bc;font-size:14px}
+section{padding:75px 7%}.title{font-size:38px;margin-bottom:10px}.muted{color:#91a8bc}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}
+.card{background:linear-gradient(145deg,#071827,#04101c);border:1px solid #123d61;border-radius:18px;padding:25px;transition:.2s}
+.card:hover{transform:translateY(-5px);border-color:#159ff2}
+.card h3{margin:8px 0}.card p{color:#91a8bc;font-size:14px}
+.icon{font-size:30px}
+.price{margin-top:30px;padding:35px;border:1px solid #155887;border-radius:22px;background:linear-gradient(120deg,#06182a,#03101c);display:flex;justify-content:space-between;align-items:center;gap:25px}
+.old{text-decoration:line-through;color:#708497}.price strong{font-size:48px}
+footer{text-align:center;padding:30px;border-top:1px solid #12304d;color:#708497;font-size:13px}
+@media(max-width:800px){nav div:nth-child(2){display:none}.hero{grid-template-columns:1fr}.features,.cards{grid-template-columns:1fr}.price{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<nav>
+<div class="logo">◈ Roblox <span>Script Academy</span></div>
+<div><a href="#inicio">Início</a><a href="#curso">Curso</a><a href="#depoimentos">Depoimentos</a><a href="#perguntas">Perguntas</a></div>
+<a class="btn" href="#comprar">Comprar agora</a>
+</nav>
+
+<section class="hero" id="inicio">
+<div>
+<div class="badge">🚀 DO ZERO AO AVANÇADO</div>
+<h1>Aprenda a criar <span>scripts no Roblox Studio</span></h1>
+<p>Aprenda Lua e desenvolva seus próprios sistemas e experiências no Roblox com aulas práticas e explicações simples.</p>
+<a class="btn" href="#comprar">Quero começar agora →</a>
+</div>
+<div class="visual">🎮<br></div>
+</section>
+
+<div class="features">
+<div class="feature"><b>📚 Conteúdo completo</b><p>Do básico ao avançado.</p></div>
+<div class="feature"><b>⚡ Seu ritmo</b><p>Estude quando quiser.</p></div>
+<div class="feature"><b>🎮 Projetos práticos</b><p>Aprenda fazendo.</p></div>
+<div class="feature"><b>👥 Comunidade</b><p>Troque ideias e evolua.</p></div>
+</div>
+
+<section id="curso">
+<div class="badge">MÓDULOS DO CURSO</div>
+<h2 class="title">O que você vai <span class="blue">aprender?</span></h2>
+<p class="muted">Uma trilha simples para começar a programar no Roblox Studio.</p>
+<div class="cards">
+<div class="card"><div class="icon">▶️</div><h3>Roblox Studio</h3><p>Interface, Explorer, objetos e ferramentas.</p></div>
+<div class="card"><div class="icon">💻</div><h3>Linguagem Lua</h3><p>Variáveis, funções, eventos e lógica.</p></div>
+<div class="card"><div class="icon">⚙️</div><h3>Sistemas de jogo</h3><p>Crie sistemas e conecte scripts.</p></div>
+<div class="card"><div class="icon">🖥️</div><h3>Interfaces</h3><p>Crie telas, botões e menus.</p></div>
+<div class="card"><div class="icon">⚔️</div><h3>Projetos</h3><p>Pratique criando mecânicas.</p></div>
+<div class="card"><div class="icon">🏆</div><h3>Projeto final</h3><p>Junte tudo em um projeto.</p></div>
+</div>
+</section>
+
+<section id="depoimentos">
+<div class="badge">DEPOIMENTOS</div>
+<h2 class="title">O que alunos dizem</h2>
+<p class="muted">Exemplos demonstrativos — troque por depoimentos reais autorizados.</p>
+<div class="cards">
+<div class="card">★★★★★<br><br>“As aulas são fáceis de acompanhar.”<br><br><b>— Pedro, exemplo</b></div>
+<div class="card">★★★★★<br><br>“Gostei dos projetos práticos.”<br><br><b>— Lara, exemplo</b></div>
+<div class="card">★★★★★<br><br>“Consegui praticar no Studio.”<br><br><b>— Tiago, exemplo</b></div>
+</div>
+</section>
+
+<section id="comprar">
+<div class="badge">OFERTA DE DEMONSTRAÇÃO</div>
+<div class="price">
+<div><h2>Comece agora!</h2><p class="muted">Acesso ao curso demonstrativo.</p><span class="old">R$ 199,90</span><br><strong>R$ 99,90</strong></div>
+<a class="btn" href="#" onclick="alert('Checkout de demonstração: nenhum pagamento será realizado.');return false;">🛒 Comprar agora</a>
+</div>
+</section>
+
+<section id="perguntas">
+<div class="badge">PERGUNTAS</div>
+<h2 class="title">Perguntas frequentes</h2>
+<div class="cards">
+<div class="card"><h3>Preciso saber programar?</h3><p>Não. A proposta começa pelos fundamentos.</p></div>
+<div class="card"><h3>Preciso do Roblox Studio?</h3><p>Sim, ele será usado nas atividades.</p></div>
+<div class="card"><h3>O checkout é real?</h3><p>Não. Este site é uma demonstração.</p></div>
+</div>
+</section>
+
+<footer>© 2026 Roblox Script Academy — Projeto demonstrativo. Roblox é uma marca de terceiros.</footer>
+</body>
+</html>
